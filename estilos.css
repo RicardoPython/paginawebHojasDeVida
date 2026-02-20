@@ -1,0 +1,130 @@
+/* --- RESET Y BASE --- */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background-color: #f8f9fa; }
+
+/* --- CABECERA --- */
+.barra-superior {
+    background: white; padding: 20px 40px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.logo-area img { height: 35px; }
+.separador { color: #ccc; margin: 0 10px; }
+.curso { font-size: 13px; color: #666; }
+
+.usuario-area { display: flex; align-items: center; gap: 20px; color: #777; }
+.iconos-nav { display: flex; gap: 15px; font-size: 18px; }
+.perfil { display: flex; align-items: center; gap: 8px; font-weight: bold; font-size: 12px; }
+.avatar { width: 35px; height: 35px; border-radius: 50%; object-fit: cover; }
+
+/* --- MENÚ AZUL Y DROPDOWNS --- */
+.nav-azul { background-color: #003366; padding: 0 40px; }
+.menu { list-style: none; display: flex; }
+.menu li { position: relative; }
+.menu li a { color: white; text-decoration: none; padding: 15px 20px; display: block; font-size: 13px; }
+
+.submenu {
+    display: none; position: absolute; background: white; 
+    min-width: 180px; box-shadow: 0 8px 16px rgb(255, 255, 255); z-index: 100;
+}
+.submenu li a { color: #333 !important; border-bottom: 1px solid #eee; }
+.dropdown:hover .submenu { display: block; }
+
+/* --- BUSCADOR (ICONO DENTRO) --- */
+.contenedor { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+.titulo-pagina { text-align: center; font-size: 32px; font-weight: 400; margin-bottom: 30px; }
+
+.buscador-container { display: flex; flex-direction: column; align-items: center; margin-bottom: 40px; }
+
+.buscar { 
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #ced4da;
+    width: 100%;
+    max-width: 380px;        /* Tamaño del buscador */
+    padding: 6px 12px;
+    border-radius: 2px; /* Empuja el resto a la derecha */
+}
+
+.buscar input { 
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.caja-buscar:focus-within {
+    border-color: #007bff;
+    box-shadow: 0 0 0 1px #007bff;
+}
+
+.icono-lupa { 
+    color: #adb5bd; /* Color gris suave para la lupa */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.link-opciones { font-size: 12px; color: #0056b3; text-decoration: none; margin-top: 8px; }
+
+/* --- GRID Y TARJETAS --- */
+.empleados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tarjeta {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    aspect-ratio: 1 / 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 0.3s ease;
+    cursor: default;
+}
+
+
+.tarjeta:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    border-color: #ddd;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px; 
+    line-height: 1.4;    
+}
+
+.tarjeta {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.foto-perfil { width: 110px; height: 110px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; }
+.btn-ver { background-color: #007bff; color: white; border: none; padding: 8px 35px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+
+/* --- ICONOS SOCIALES --- */
+.redes { display: flex; justify-content: center; gap: 12px; margin-top: 25px; }
+.social { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; }
+
+.in { background-color: #0077b5; }
+.tw { background-color: #000; }
+.fb { background-color: #1877f2; }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) { .empleados { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .empleados { grid-template-columns: 1fr; } .buscar{ width: 100%; } }

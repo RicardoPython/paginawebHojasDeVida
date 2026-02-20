@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hojas de Vida - Campus Virtual</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="barra-superior">
+            <div class="logo-area">
+                <img src="imagenes/logoUnimag.png" alt="Logo">
+                <span class="separador">|</span>
+                <span class="curso">DESARROLLO WEB: FRONT-END...</span>
+            </div>
+            <div class="usuario-area">
+                <div class="iconos-nav">
+                    <i class="fa-solid fa-table-cells"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+                <div class="perfil">
+                    <span class="nombre">JOHAN ALBERTO ROBLES S.</span>
+                    <img src="none" class="avatar">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-azul">
+            <ul class="menu">
+                <li><a href="#">Contenido</a></li>
+                <li><a href="#">Asignaciones</a></li>
+                <li><a href="#">Foros</a></li>
+                <li><a href="#">Cuestionarios</a></li>
+                <li><a href="#">Progreso de la clase</a></li>
+                <li><a href="#">Valoraciones</a></li>
+                <li class="dropdown">
+                    <a href="#">Evaluación <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Calificaciones</a></li>
+                        <li><a href="#">Tareas</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Herramientas <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">Calendario</a></li>
+                        <li><a href="#">Biblioteca</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo-pagina">Hojas de Vida de Estudiantes</h1>
+
+        <div class="buscadorContenedor">
+            <div class="buscar">
+                <input type="text" placeholder="Buscar..." class="buscar">
+                <i class="fa-solid fa-magnifying-glass icono-lupa"></i>
+            </div>
+            <a href="#" class="link-opciones">Mostrar opciones de búsqueda</a>
+        </div>
+
+        <div class="empleados">
+            <div class="tarjeta">
+                <img src="hojasdevida/Ricardo/imagenes/Ricardo.jpg" alt="Estudiante" class="foto-perfil">
+                <h3>Ricardo Cevallos</h3>
+                <p>ESTUDIANTE DE INGENIERIA DE SISTEMAS</p>
+                <button class="btn-ver" onclick="window.location.href='https://ricardopython.github.io/hojadevoda/'">Ver</button>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/feed/" class="social in"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social tw"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social fb"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="hojasdevida/Shania/img/Shania.png" alt="Estudiante" class="foto-perfil">
+             <h3>Shania Russo</h3>
+                <p>ESTUDIANTE DE INGENIERIA DE SISTEMAS</p>
+                <button class="btn-ver" onclick="window.location.href=' https://russoshan.github.io/Portafolio-Profesional/'">Ver</button>
+                <div class="redes">
+                    <a href="https://www.linkedin.com/feed/" class="social in"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social tw"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social fb"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+    </main>
+
+</body>
+</html>
